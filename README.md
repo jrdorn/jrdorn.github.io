@@ -4,24 +4,22 @@ Practice website
 
 <!--
     
-    
+
+    To-do:
         
 
 
-
-
-    To-do:
-
-    Functionality
         Stuff to do: dropdown of destination cities
         Flights: to/from airports
-        Dynamic loading pages
-            Signup page, same html file for email form
-            Activities: form with three parameters, click sumbit, THEN display names
+
+
+    Functionality
+        
+       
         Enter button, confirmation message that users with similar dates with be emailed to you
         Pretty transitions-fade in/out
-        Apply some basic UX principles
-        Nav bar
+        
+        
         Form
         Login option instead of just signup 
         Add airports to flights.html
@@ -38,11 +36,9 @@ Practice website
 
     Requirements:
 
-        at least three separate html files / 
-
-        css/style.css linked in all html pages / 
-
-        link all pages with <a> tag nav bar / 
+        + at least three separate html files  
+        + css/style.css linked in all html pages 
+        + link all pages with <a> tag nav bar 
 
         form with 3 fields, 2 are required / 
          
@@ -51,7 +47,7 @@ Practice website
             
         At least one page should use multi-column layout. For example, you may want to use bootstrap's grid system to layout rows and columns of images on a "gallery" page of your site / 
              
-        an implementation of either Bootstrap's carousel component or tabs component / 
+         
 
         your repo should be pushed to your gitbhut acct
 
@@ -64,6 +60,12 @@ Practice website
 
         your repo should contain at least 15 commits and should reflect a consistent commit history
 
+
+        Future: 
+            Dynamic loading pages
+            Signup page, same html file for email form
+            Activities: form with three parameters, click sumbit, THEN display names
+            Usability tests and UX design principles 
 
         Credit:
         https://github.com/flatpickr/flatpickr
