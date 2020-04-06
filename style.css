@@ -17,7 +17,7 @@ body {
 a:link {
     color:pink;
 }
-
+}
 a:visited {
     color:teal;
 }
@@ -27,7 +27,7 @@ a:active {
 
 /* Spacing and center alignment for links */
 h3 {
-    line-height:200px;
+    line-height:300px;
     text-align:center;
 }
 
