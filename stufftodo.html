@@ -3,7 +3,20 @@
     <head>
         <title>Stuff to Do | Travelist</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        
+        <script type="text/javascript" src="js/scripts.js"></script>
+
+
     </head>
 
     <body>
@@ -11,15 +24,31 @@
             <h1 id="top">Travelist</h1>
             <h4>Stuff to Do</h4>
         </header>
-        <section>
-            <label for="place">Place: </label>
-            <input type="text" id="place" name="place">
-        </section>
+
+
+
+
+        <form>
+            <label for="destination">Destination: </label>
+            <input type="text" id="destination" name="destination">
+        </form>
+
+
+        <form>
+            <label for="date">Date: </label>
+            <input class="calendarpickr" type="text" id="date" name="date">
+        </form>
+
+
         <br>
-        <section>
+        <form>
             <label for="time">Time: </label>
-            <input type="text" id="time" name="time">
-        </section>
+            <input class="timepickr" type="text" id="time" name="time">
+
+
+
+            
+        </form>
             <label for="listofpeople">Click a name to submit join request:</label> 
             <br>
             <textarea id="listofpeople" rows="4" cols="50">
