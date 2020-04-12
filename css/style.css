@@ -3,6 +3,7 @@ header {
     text-align:center;
     color:blue; 
     background-color: aqua;
+    opacity: 0.5;
 }
 
 /* Single spacing */
@@ -42,6 +43,7 @@ footer {
     width: 100%;
     height: 2.5rem;   
     background-color: aqua;   
+    opacity: 0.5;
 }
 
 #place, #date, #time {
