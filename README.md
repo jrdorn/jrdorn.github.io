@@ -9,47 +9,28 @@ Practice website
         
 
 
-        Stuff to do: dropdown of destination cities
-        Flights: to/from airports
+        TO DO: 
 
 
-    Functionality
+        textbox to submit travel activities, 
         
        
         Enter button, confirmation message that users with similar dates with be emailed to you
-        Pretty transitions-fade in/out
-        
-        
-        Form
-        Login option instead of just signup 
-        Add airports to flights.html
 
-        
-    
-
-    Aesthetics
-        Uniform theme
-        Image
-
-
-
-
-    Requirements:
-
-        + at least three separate html files  
-        + css/style.css linked in all html pages 
-        + link all pages with <a> tag nav bar 
-
-        form with 3 fields, 2 are required / 
-         
+  
         when user submits contact form, user 
         Formspree. io  to ensure you receive submissions/ 
             
         At least one page should use multi-column layout. For example, you may want to use bootstrap's grid system to layout rows and columns of images on a "gallery" page of your site / 
-             
-         
+        
+        Design logo/background image
 
-        your repo should be pushed to your gitbhut acct
+        Polished theme
+
+
+
+
+         
 
     Upload:
 
@@ -65,7 +46,12 @@ Practice website
             Dynamic loading pages
             Signup page, same html file for email form
             Activities: form with three parameters, click sumbit, THEN display names
-            Usability tests and UX design principles 
+            Usability tests and UX design principles
+            Pretty transitions-fade in/out
+            Option to login instead of just signup 
+            Functionality for all airports and countries/cities
+            Roundtrip, one-way, and multiple city flights
+            Responsive mobile design
 
         Credit:
         https://github.com/flatpickr/flatpickr
