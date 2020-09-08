@@ -27,13 +27,6 @@ img {
   object-fit: cover;
 }
 
-/* Profile picture */
-
-#ptext {
-  float: right;
-  margin: 10px;
-}
-
 /* Spacing and center alignment for links */
 h3 {
   line-height: 200px;
