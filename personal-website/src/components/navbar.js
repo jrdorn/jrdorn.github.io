@@ -3,6 +3,7 @@ import React from "react";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 
+import Resume from "../docs/resume.pdf";
 
 class Navbar extends React.Component {
   render() {
@@ -19,8 +20,7 @@ class Navbar extends React.Component {
           ></a>
         </Tab>
         <Tab eventKey="resume" title="Resume">
-          {" "}
-          <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a href= {Resume} target="_blank" rel="noopener noreferrer">
             Resume
           </a>
         </Tab>
