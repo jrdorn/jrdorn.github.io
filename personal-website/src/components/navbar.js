@@ -7,10 +7,9 @@ import Resume from "../docs/resume.pdf";
 
 class Navbar extends React.Component {
   render() {
-    const [key, setKey] = useState("main");
 
     return (
-      <Tabs activeKey={key} onSelect={(k) => setKey(k)}>
+      <Tabs >
         <Tab eventKey="main" title="Main"></Tab>
         <Tab eventKey="projects" title="Projects">
           <a
