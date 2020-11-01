@@ -10,8 +10,11 @@ import Col from "react-bootstrap/Col";
 
 import profile_pic from "./img/profile_pic.jpg";
 
+
+
 function App() {
   return (
+
     <body className="App">
       <header>
         <h1 id="top">Josh Dorn</h1>

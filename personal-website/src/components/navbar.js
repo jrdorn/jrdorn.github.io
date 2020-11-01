@@ -5,10 +5,14 @@ import Tab from "react-bootstrap/Tab";
 
 import Resume from "../docs/resume.pdf";
 
+
+
 class Navbar extends React.Component {
+
   render() {
 
     return (
+
       <Tabs >
         <Tab eventKey="main" title="Main"></Tab>
         <Tab eventKey="projects" title="Projects">
@@ -16,13 +20,14 @@ class Navbar extends React.Component {
             href="https://github.com/jrdorn"
             target="_blank"
             rel="noopener noreferrer"
-          ></a>
+          >Projects</a>
         </Tab>
+        
         <Tab eventKey="resume" title="Resume">
-          <a href= {Resume} target="_blank" rel="noopener noreferrer">
-            Resume
-          </a>
+          <a href= {Resume} target="_blank" rel="noopener noreferrer">Resume</a>
         </Tab>
+      
+        
         <Tab eventKey="marmosets" title="Marmosets"></Tab>
       </Tabs>
     );
