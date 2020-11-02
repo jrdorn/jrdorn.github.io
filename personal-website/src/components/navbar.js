@@ -1,38 +1,48 @@
 import React from "react";
 
+import Nav from 'react-bootstrap/Nav'
+
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 
 import Resume from "../docs/resume.pdf";
 
 
-import Link from "react-router";
-import ReactRouterBootstrap, { LinkContainer } from 'react-router-bootstrap';
-
 class Navbar extends React.Component {
 
   render() {
     return (
+      <Nav>
+        <Tabs >
 
-      <Tabs >
-        <Tab eventKey="main" title="Main" >
-        </Tab>
-        <Tab eventKey="projects" title="Projects">
-          <a
-            href="https://github.com/jrdorn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >test</a>
-          <Link>Website</Link>
-        </Tab>
-        
-        <Tab eventKey="resume" title="Resume">
-          <a href= {Resume} target="_blank" rel="noopener noreferrer">Resume</a>
-        </Tab>
+          <Tab eventKey="main" title="Main" >
+          </Tab>
+
+          <Tab eventKey="projects" title="Projects">
+            <Nav.Link 
+              href="https://github.com/jrdorn"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+            </Nav.Link>
+          </Tab>
+          
+          <Tab eventKey="resume" title="Resume">
+            <Nav.Link 
+              href= {Resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              > 
+            </Nav.Link>
+          </Tab>
       
-        
-        <Tab eventKey="marmosets" title="Marmosets" onSelect={()=> window.open("google.com","_blank")}></Tab>
-      </Tabs>
+          <Tab eventKey="marmosets" title="Marmosets" onSelect={()=> window.open("google.com","_blank")}>
+
+          </Tab>
+
+        </Tabs>
+      </Nav>
+      
     );
   }
 }
