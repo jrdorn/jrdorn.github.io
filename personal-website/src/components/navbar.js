@@ -1,26 +1,29 @@
 import React from "react";
 
-import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
 
 import Resume from "../docs/resume.pdf";
 
 
+import Link from "react-router";
+import ReactRouterBootstrap, { LinkContainer } from 'react-router-bootstrap';
 
 class Navbar extends React.Component {
 
   render() {
-
     return (
 
       <Tabs >
-        <Tab eventKey="main" title="Main"></Tab>
+        <Tab eventKey="main" title="Main" >
+        </Tab>
         <Tab eventKey="projects" title="Projects">
           <a
             href="https://github.com/jrdorn"
             target="_blank"
             rel="noopener noreferrer"
-          >Projects</a>
+          >test</a>
+          <Link>Website</Link>
         </Tab>
         
         <Tab eventKey="resume" title="Resume">
@@ -28,7 +31,7 @@ class Navbar extends React.Component {
         </Tab>
       
         
-        <Tab eventKey="marmosets" title="Marmosets"></Tab>
+        <Tab eventKey="marmosets" title="Marmosets" onSelect={()=> window.open("google.com","_blank")}></Tab>
       </Tabs>
     );
   }
