@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Nav from 'react-bootstrap/Nav'
 
@@ -8,14 +8,23 @@ import Tabs from "react-bootstrap/Tabs";
 import Resume from "../docs/resume.pdf";
 
 
-class Navbar extends React.Component {
+//class Navbar extends React.Component {
+export default function Navbar() {
 
-  render() {
+
+//  render() {
+
+  const [key, setKey] = useState("main");
+
+
     return (
       <Nav>
-        <Tabs >
+        <Tabs
+          activeKey={key}
+          onSelect={(k) => setKey(k)}
+        >
 
-          <Tab eventKey="main" title="Main" >
+          <Tab eventKey="main" title="Main">
           </Tab>
 
           <Tab eventKey="projects" title="Projects">
@@ -32,7 +41,7 @@ class Navbar extends React.Component {
               href= {Resume}
               target="_blank"
               rel="noopener noreferrer"
-              > 
+              > well
             </Nav.Link>
           </Tab>
       
@@ -44,7 +53,7 @@ class Navbar extends React.Component {
       </Nav>
       
     );
-  }
+//  }
 }
 
-export default Navbar;
+//export default Navbar;
