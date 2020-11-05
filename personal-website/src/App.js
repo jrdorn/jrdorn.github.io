@@ -32,12 +32,11 @@ function App() {
           <Row>
             <Col md="6">
               <p id="ptext">
-                Born in San Jose, Josh Dorn grew up being constantly inspired by
-                the spirit of innovation and positive change he saw around him
-                in Silicon Valley. He graduated with highest honors from the
-                University of California, Davis where he majored in linguistics
-                and took several computer science courses to fulfill his major
-                requirements. He is currently studying front-end engineering in
+                Josh Dorn graduated with highest honors from the
+                University of California, Davis where he majored in linguistics. After taking a course on computational linguistics and an introductory Python course, 
+                Josh knew he wanted to 
+                continue studying computer science to build cool things to help people.
+                 He is currently studying front-end engineering in
                 Transition to Tech and is also interested in social impact
                 investing and human-centered design. When not coding, you can
                 find Josh reading, doing improv, and practicing Vipassana
