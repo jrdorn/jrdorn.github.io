@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Nav from 'react-bootstrap/Nav'
 
@@ -16,12 +16,21 @@ export default function Navbar() {
 
   const [key, setKey] = useState("main");
 
+  const handleSelect = (k) => {
+    //alert('selected ' + k);
+    setKey(k);
+    if (k == 'projects') {
+      alert(k);
+    }
+  }
+
 
     return (
       <Nav>
         <Tabs
           activeKey={key}
-          onSelect={(k) => setKey(k)}
+          onSelect={(k) => handleSelect(k)}
+         // onSelect={(k) => setKey(k)}
         >
 
           <Tab eventKey="main" title="Main">
