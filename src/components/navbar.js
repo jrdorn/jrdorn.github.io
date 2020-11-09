@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import Nav from 'react-bootstrap/Nav'
 
@@ -8,50 +8,34 @@ import Tabs from "react-bootstrap/Tabs";
 import Resume from "../docs/resume.pdf";
 
 
-//class Navbar extends React.Component {
+
 export default function Navbar() {
-
-
-//  render() {
-
+  
   const [key, setKey] = useState("main");
 
   const handleSelect = (k) => {
-    //alert('selected ' + k);
     setKey(k);
-    if (k == 'projects') {
-      alert(k);
+    if (k === 'projects') {
+      window.open('https://github.com/jrdorn', '_blank');
+    } else if (k === 'resume') {
+      window.open(Resume, '_blank');
     }
   }
-
 
     return (
       <Nav>
         <Tabs
           activeKey={key}
           onSelect={(k) => handleSelect(k)}
-         // onSelect={(k) => setKey(k)}
         >
 
           <Tab eventKey="main" title="Main">
           </Tab>
 
           <Tab eventKey="projects" title="Projects">
-            <Nav.Link 
-              href="https://github.com/jrdorn"
-              target="_blank"
-              rel="noopener noreferrer"
-              >
-            </Nav.Link>
           </Tab>
           
           <Tab eventKey="resume" title="Resume">
-            <Nav.Link 
-              href= {Resume}
-              target="_blank"
-              rel="noopener noreferrer"
-              > well
-            </Nav.Link>
           </Tab>
       
           <Tab eventKey="marmosets" title="Marmosets" onSelect={()=> window.open("google.com","_blank")}>
@@ -62,7 +46,7 @@ export default function Navbar() {
       </Nav>
       
     );
-//  }
+
 }
 
-//export default Navbar;
+
