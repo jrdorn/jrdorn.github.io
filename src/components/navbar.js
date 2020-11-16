@@ -19,6 +19,9 @@ export default function Navbar() {
       window.open('https://github.com/jrdorn', '_blank');
     } else if (k === 'resume') {
       window.open(Resume, '_blank');
+    } else if (k === 'marmosets') {
+      console.log('marmosets');
+      window.open('https://bing.com', '_blank');
     }
   }
 
@@ -38,7 +41,7 @@ export default function Navbar() {
           <Tab eventKey="resume" title="Resume">
           </Tab>
       
-          <Tab eventKey="marmosets" title="Marmosets" onSelect={()=> window.open("google.com","_blank")}>
+          <Tab eventKey="marmosets" title="Marmosets">
 
           </Tab>
 
