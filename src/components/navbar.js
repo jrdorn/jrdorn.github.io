@@ -7,6 +7,8 @@ import Tabs from "react-bootstrap/Tabs";
 
 import Resume from "../docs/resume.pdf";
 
+import mar1 from "../img/mar1.jpg";
+
 
 
 export default function Navbar() {
@@ -20,8 +22,9 @@ export default function Navbar() {
     } else if (k === 'resume') {
       window.open(Resume, '_blank');
     } else if (k === 'marmosets') {
-      console.log('marmosets');
-      window.open('https://bing.com', '_blank');
+      //var myImg = document.getElementById('pimg');
+      //window.open(myImg, '_blank');
+      document.getElementById('pimg').src=mar1;
     }
   }
 
