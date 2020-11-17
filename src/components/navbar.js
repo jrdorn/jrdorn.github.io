@@ -10,7 +10,6 @@ import Resume from "../docs/resume.pdf";
 import mar1 from "../img/mar1.jpg";
 
 
-
 export default function Navbar() {
   
   const [key, setKey] = useState("main");

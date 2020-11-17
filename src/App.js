@@ -46,7 +46,7 @@ function App() {
           </Row>
         </Container>
       </main>
-      <Footer />
+      <Footer/>
     </body>
   );
 }
