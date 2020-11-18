@@ -7,6 +7,8 @@ import Tabs from "react-bootstrap/Tabs";
 
 import Resume from "../docs/resume.pdf";
 
+import profile_pic from "../img/profile_pic.jpg";
+
 import mar1 from "../img/mar1.jpg";
 import mar2 from "../img/mar2.jpg";
 import mar3 from "../img/mar3.jpg";
@@ -32,7 +34,9 @@ export default function Navbar() {
       //var myImg = document.getElementById('pimg');
       //window.open(myImg, '_blank');
       document.getElementById('pimg').src=marList[random];
-    } 
+    } else if (k === 'main') {
+      document.getElementById('pimg').src=profile_pic;
+    }
   }
 
 
