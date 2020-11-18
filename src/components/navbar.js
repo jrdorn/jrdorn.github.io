@@ -8,11 +8,19 @@ import Tabs from "react-bootstrap/Tabs";
 import Resume from "../docs/resume.pdf";
 
 import mar1 from "../img/mar1.jpg";
+import mar2 from "../img/mar2.jpg";
+import mar3 from "../img/mar3.jpg";
+import mar4 from "../img/mar4.jpg";
+import mar5 from "../img/mar5.jpg";
+import mar6 from "../img/mar6.jpg";
 
 
 export default function Navbar() {
   
   const [key, setKey] = useState("main");
+
+  const marList = [mar1, mar2, mar3, mar4, mar5, mar6];
+  const random = Math.floor(Math.random() * marList.length);
 
   const handleSelect = (k) => {
     setKey(k);
@@ -23,9 +31,10 @@ export default function Navbar() {
     } else if (k === 'marmosets') {
       //var myImg = document.getElementById('pimg');
       //window.open(myImg, '_blank');
-      document.getElementById('pimg').src=mar1;
-    }
+      document.getElementById('pimg').src=marList[random];
+    } 
   }
+
 
     return (
       <Nav>
