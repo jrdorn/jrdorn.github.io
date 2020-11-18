@@ -33,7 +33,7 @@ function App() {
             <Col md="6">
               <p id="ptext">
                 Josh Dorn graduated with highest honors from the
-                University of California, Davis where he majored in linguistics. After taking a course on computational linguistics and an introductory Python course, 
+                University of California, Davis with a major in linguistics. After taking a course on computational linguistics and an introductory Python course, 
                 Josh knew he wanted to 
                 continue studying computer science to build cool things to help people.
                  He is currently studying front-end engineering in
