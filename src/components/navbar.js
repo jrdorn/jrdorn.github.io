@@ -31,8 +31,6 @@ export default function Navbar() {
     } else if (k === 'resume') {
       window.open(Resume, '_blank');
     } else if (k === 'marmosets') {
-      //var myImg = document.getElementById('pimg');
-      //window.open(myImg, '_blank');
       document.getElementById('pimg').src=marList[random];
     } else if (k === 'main') {
       document.getElementById('pimg').src=profile_pic;
