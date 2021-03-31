@@ -28,7 +28,7 @@ body {
 /* Hyperlink color */
 a:link,
 a:visited {
-  color: #bd8e2f;
+  color: #666666;
   background-color: transparent;
   text-decoration: none;
 }
