@@ -1,0 +1,39 @@
+??? joshdorn.me
+??? NET::ERR_CERT_COMMON_NAME_INVALID
+
+>design
+  2f2a2a dark brn
+  f7f7f7 white
+  e7e3de off white
+  c296bb off pink
+  aeb1a0 off green
+  3c4d5c off blue
+  
+
+>wireframe
+>logo
+
+>404 page
+
+>hero image, personality, 
+
+>main
+  >navbar
+  >footer
+  >description
+  >links to github, resume, linkedin
+  >blog on technical thoughts?
+  >live project, like a game?
+  >essays
+  >sketch comedy
+
+
+>SEO: when you google name, homepage shows up
+
+
+
+  >inspiration
+   >https://niels.nu/about
+   >https://nick.computer/
+    >https://www.karststonepaper.com/
+    >kalimba, soundcloud, sketch comedy
