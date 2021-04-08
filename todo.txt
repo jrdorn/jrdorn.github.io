@@ -1,6 +1,3 @@
-??? joshdorn.me
-??? NET::ERR_CERT_COMMON_NAME_INVALID
-
 >design
   2f2a2a dark brn
   f7f7f7 white
@@ -22,8 +19,10 @@
   >footer
   >description
   >links to github, resume, linkedin
-  >blog on technical thoughts?
-  >live project, like a game?
+
+  >technical blog
+  >live project/ game
+  >lightmode/ darkmode
   >essays
   >sketch comedy
 
@@ -35,5 +34,7 @@
   >inspiration
    >https://niels.nu/about
    >https://nick.computer/
+   >https://www.justinchi.me/
+   >https://irontoiron.com/
     >https://www.karststonepaper.com/
     >kalimba, soundcloud, sketch comedy
