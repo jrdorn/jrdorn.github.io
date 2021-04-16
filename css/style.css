@@ -1,6 +1,16 @@
 /* || General Setup  */
 
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Libre+Baskerville&display=swap");
+
+h1 {
+  font-family: "Lato", sans-serif;
+  color: red;
+}
+
+p {
+  font-family: "Libre Baskerville", serif;
+  color: blue;
+}
 
 /* body {
   background-color: blue;
