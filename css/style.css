@@ -81,4 +81,8 @@ p {
 
 /* || Index */
 
+li {
+  list-style-type: none;
+}
+
 /* || 404 */
