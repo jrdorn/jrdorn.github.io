@@ -51,6 +51,7 @@ html {
     "header"
     "projects"
     "footer";
+  grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
 }
 
@@ -81,8 +82,25 @@ p {
 
 /* || Index */
 
+/* spacing */
+
+.projects {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+/* footer links */
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
 li {
   list-style-type: none;
+  /* margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 2em; */
 }
 
 /* || 404 */
