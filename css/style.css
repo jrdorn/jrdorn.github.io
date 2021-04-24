@@ -82,6 +82,11 @@ p {
 
 /* || Index */
 
+#slipsum {
+  color: #e7e3de;
+  text-decoration: none;
+}
+
 /* spacing */
 
 .header {
