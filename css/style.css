@@ -36,6 +36,10 @@ html {
   grid-area: header;
 }
 
+.about {
+  grid-area: about;
+}
+
 .projects {
   grid-area: projects;
 }
@@ -44,15 +48,15 @@ html {
   grid-area: footer;
 }
 
-#index,
-#err {
+#index {
   display: grid;
   gap: 1em;
   grid-template-areas:
     "header"
+    "about"
     "projects"
     "footer";
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto auto 1fr auto;
   grid-template-columns: 100%;
 }
 
@@ -70,15 +74,16 @@ h3 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 p {
@@ -88,6 +93,14 @@ p {
 
 a {
   color: inherit;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+a:hover {
+  color: #1eabfb;
 }
 
 /* || Index */
@@ -106,6 +119,15 @@ a {
 .projects {
   margin-left: 7%;
   margin-right: 7%;
+}
+
+.about {
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.error {
+  margin-left: 7%;
 }
 
 /* footer links */
@@ -127,11 +149,24 @@ li {
 .svg {
   filter: invert(100%) sepia(11%) saturate(1153%) hue-rotate(307deg)
     brightness(99%) contrast(82%);
+  /* transition: fill 0.4s ease; */
 }
 
 .svg:hover {
   filter: invert(54%) sepia(20%) saturate(3005%) hue-rotate(172deg)
     brightness(98%) contrast(95%);
+  /* transition: fill 0.4s ease; */
 }
 
 /* || 404 */
+
+#err {
+  display: grid;
+  gap: 1em;
+  grid-template-areas:
+    "header"
+    "error"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+}
