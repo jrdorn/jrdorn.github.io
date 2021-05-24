@@ -44,7 +44,8 @@ html {
   grid-area: footer;
 }
 
-#index {
+#index,
+#err {
   display: grid;
   gap: 1em;
   grid-template-areas:
@@ -83,6 +84,10 @@ h3 {
 p {
   font-size: 1.5rem;
   line-height: 1.5;
+}
+
+a {
+  color: inherit;
 }
 
 /* || Index */
