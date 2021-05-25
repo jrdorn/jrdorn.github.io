@@ -102,6 +102,9 @@ a {
 a:hover {
   color: #1eabfb;
 }
+.gLink {
+  text-decoration: none;
+}
 
 /* || Index */
 
@@ -128,6 +131,18 @@ a:hover {
 
 .error {
   margin-left: 7%;
+}
+
+/* images */
+
+.imgWrap {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  max-height: 500px;
+  max-width: 353px;
 }
 
 /* footer links */
