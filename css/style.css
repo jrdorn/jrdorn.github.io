@@ -144,6 +144,7 @@ a:hover {
 img {
   max-height: 500px;
   max-width: 353px;
+  border-radius: 7px;
 }
 
 /* footer links */

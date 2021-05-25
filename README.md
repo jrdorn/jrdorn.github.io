@@ -9,7 +9,7 @@ portofolio.
 
 ## Status
 
-This project is currently under development.
+This project is currently under development. Future additions include a contact form, blog posts, and fading SVG links.
 
 ## Features
 
