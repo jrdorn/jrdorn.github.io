@@ -48,6 +48,10 @@ html {
   grid-area: footer;
 }
 
+.articles {
+  grid-area: articles;
+}
+
 #index {
   display: grid;
   gap: 2em;
@@ -57,6 +61,25 @@ html {
     "projects"
     "footer";
   grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: 100%;
+}
+
+#err {
+  display: grid;
+  gap: 1em;
+  grid-template-areas:
+    "header"
+    "error"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+}
+
+#blog {
+  display: grid;
+  gap: 2em;
+  grid-template-areas: "header" "articles" "footer";
+  grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
 }
 
@@ -173,17 +196,4 @@ li {
   filter: invert(54%) sepia(20%) saturate(3005%) hue-rotate(172deg)
     brightness(98%) contrast(95%);
   /* transition: fill 0.4s ease; */
-}
-
-/* || 404 */
-
-#err {
-  display: grid;
-  gap: 1em;
-  grid-template-areas:
-    "header"
-    "error"
-    "footer";
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 100%;
 }
