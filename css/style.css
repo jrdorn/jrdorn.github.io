@@ -1,14 +1,13 @@
 /* || General Setup  */
 
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Libre+Baskerville&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono&display=swap");
 body {
-  background-color: #0c2759;
+  background-color: #1e1e1e; /* matte black */
 }
 
-/* section {
-    background-color: green;
-} */
+section {
+  background-color: #252526; /* light black */
+}
 
 html,
 body {
@@ -86,14 +85,14 @@ html {
 /* || Typography  */
 
 html {
-  font-family: "Lato", sans-serif;
-  color: #e7e3de;
+  font-family: "Roboto Mono", monospace;
+  color: #6c9950; /* dark green */
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Libre Baskerville", serif;
+  font-family: "Press Start 2P", cursive;
 }
 
 h1 {
@@ -115,7 +114,7 @@ p {
 }
 
 a {
-  color: inherit;
+  color: #76c98e; /* light green */
   -o-transition: 0.5s;
   -ms-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -123,13 +122,13 @@ a {
   transition: 0.5s;
 }
 a:hover {
-  color: #1eabfb;
+  color: #a947bf; /* light purple */
 }
 
 /* || Index */
 
 #slipsum {
-  color: #e7e3de;
+  color: red;
   text-decoration: none;
 }
 
@@ -196,4 +195,15 @@ li {
   filter: invert(54%) sepia(20%) saturate(3005%) hue-rotate(172deg)
     brightness(98%) contrast(95%);
   /* transition: fill 0.4s ease; */
+}
+
+/* blinking underscore in title */
+.blinking {
+  animation: blink 1.4s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
