@@ -2,11 +2,21 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono&display=swap");
 body {
-  background-color: #1e1e1e; /* matte black */
+  background-color: #0d0f10; /* matte black */
 }
 
-section {
-  background-color: #252526; /* light black */
+/* background for about and individual projects */
+.card {
+  background: linear-gradient(
+    to bottom,
+    #0300ad,
+    30%,
+    #010057
+  ); /* blue gradient */
+  border: 2px solid #c8c3bd;
+  border-radius: 7px;
+  padding: 2em;
+  margin-bottom: 7em;
 }
 
 html,
@@ -43,8 +53,8 @@ html {
   grid-area: projects;
 }
 
-.footer {
-  grid-area: footer;
+.contact {
+  grid-area: contact;
 }
 
 .articles {
@@ -58,7 +68,7 @@ html {
     "header"
     "about"
     "projects"
-    "footer";
+    "contact";
   grid-template-rows: auto auto 1fr auto;
   grid-template-columns: 100%;
 }
@@ -68,16 +78,15 @@ html {
   gap: 1em;
   grid-template-areas:
     "header"
-    "error"
-    "footer";
+    "error";
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
 }
 
-#blog {
+#case_study {
   display: grid;
   gap: 2em;
-  grid-template-areas: "header" "articles" "footer";
+  grid-template-areas: "header" "articles";
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
 }
@@ -86,13 +95,12 @@ html {
 
 html {
   font-family: "Roboto Mono", monospace;
-  color: #6c9950; /* dark green */
+  color: #c8c3bd; /* off white */
 }
 
-h1,
-h2,
-h3 {
+h1 {
   font-family: "Press Start 2P", cursive;
+  margin-top: 1.5em;
 }
 
 h1 {
@@ -106,11 +114,14 @@ h2 {
 
 h3 {
   font-size: 1.75rem;
+  margin-left: 1.2em;
 }
 
-p {
+p,
+div {
   font-size: 1.5rem;
   line-height: 1.5;
+  margin: 0;
 }
 
 a {
@@ -120,6 +131,7 @@ a {
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  text-decoration: none;
 }
 a:hover {
   color: #a947bf; /* light purple */
@@ -144,6 +156,7 @@ a:hover {
 }
 
 .about {
+  margin-top: 5em;
   margin-left: 7%;
   margin-right: 7%;
 }
@@ -159,49 +172,21 @@ a:hover {
   justify-content: center;
   margin-top: 3em;
 }
-.imgWrap:last-of-type {
-  margin-bottom: 3em;
-}
-
 img {
-  max-height: 500px;
-  max-width: 353px;
+  width: 50vw;
   border-radius: 7px;
 }
 
-/* footer links */
+/* vertically align menu links on the right side of a card*/
 
-ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
-}
-
-li {
-  list-style-type: none;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
-  margin-bottom: 2em;
-}
-
-.svg {
-  filter: invert(100%) sepia(11%) saturate(1153%) hue-rotate(307deg)
-    brightness(99%) contrast(82%);
-  /* transition: fill 0.4s ease; */
-}
-
-.svg:hover {
-  filter: invert(54%) sepia(20%) saturate(3005%) hue-rotate(172deg)
-    brightness(98%) contrast(95%);
-  /* transition: fill 0.4s ease; */
+.menuWrap {
+  display: grid;
 }
 
 /* blinking underscore in title */
 .blinking {
   animation: blink 1.4s step-start infinite;
 }
-
 @keyframes blink {
   50% {
     opacity: 0;
