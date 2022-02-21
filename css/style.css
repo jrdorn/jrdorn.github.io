@@ -205,10 +205,7 @@ a:hover {
   display: grid;
 
   margin-top: 2em;
-  width: 500px;
-
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  width: 400px;
 }
 
 /* label styling */
