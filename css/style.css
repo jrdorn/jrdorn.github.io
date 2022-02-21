@@ -36,12 +36,13 @@ html {
   border-radius: 7px;
   padding: 2em;
   margin-bottom: 7em;
+  /* width: 414px; */
 }
 .projectCard {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-gap: 2em;
+  grid-gap: 1.3em;
   justify-items: center;
 }
 
@@ -176,12 +177,11 @@ a:hover {
 }
 
 .projects {
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .about {
-  /* margin-top: 1em; */
   margin-left: 7%;
   margin-right: 7%;
 }
