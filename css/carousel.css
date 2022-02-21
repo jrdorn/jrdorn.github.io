@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+/* carousel container */
+.carousel {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  /* border: 1px solid salmon; */
+}
+
+/* individual slide styles */
+.slide {
+  /* border: 1px solid purple; */
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.slide:first-of-type {
+  left: 0;
+}
+.slide:nth-of-type(2) {
+  left: 100%;
+}
+.slide:last-of-type {
+  left: 200%;
+}
+
+/* slider button styles */
+#cbuttonContainer {
+  justify-self: center;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 200px;
+}
+.carouselButton {
+  font-family: "Righteous", cursive;
+  color: inherit;
+  font-size: 4rem;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}

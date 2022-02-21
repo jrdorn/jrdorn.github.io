@@ -35,7 +35,7 @@ html {
   border: 2px solid #c8c3bd;
   border-radius: 7px;
   padding: 2em;
-  margin-bottom: 7em;
+
   /* width: 414px; */
 }
 .projectCard {
@@ -66,28 +66,21 @@ img {
 
 /* || Main grid layout */
 
+/* index layout */
 .header {
   grid-area: header;
 }
-
 .about {
   grid-area: about;
 }
-
 .projects {
   grid-area: projects;
 }
-
 .contact {
   grid-area: contact;
   display: grid;
   justify-content: center;
 }
-
-.articles {
-  grid-area: articles;
-}
-
 #index {
   display: grid;
   gap: 2em;
@@ -100,6 +93,7 @@ img {
   grid-template-columns: 100%;
 }
 
+/* 404 page layout */
 #err {
   display: grid;
   gap: 1em;
@@ -110,12 +104,15 @@ img {
   grid-template-columns: 100%;
 }
 
-#case_study {
+/* Case study layout */
+#case-study {
   display: grid;
   gap: 2em;
-  grid-template-areas: "header" "articles";
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 100%;
+  margin-left: 1.25em;
+  margin-right: 1.25em;
+  /* grid-template-areas: "header" "articles"; */
+  /* grid-template-rows: auto 1fr auto; */
+  /* grid-template-columns: 100%; */
 }
 
 /* || Typography  */
@@ -179,6 +176,7 @@ a:hover {
 .projects {
   margin-left: 1em;
   margin-right: 1em;
+  display: grid;
 }
 
 .about {
