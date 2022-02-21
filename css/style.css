@@ -15,7 +15,6 @@ body {
 }
 
 /* alternative box model */
-
 html {
   box-sizing: border-box;
 }
@@ -47,7 +46,6 @@ html {
 }
 
 /* images */
-
 .imgWrap {
   display: flex;
   margin-top: 3em;
@@ -59,7 +57,6 @@ img {
 }
 
 /* vertically align menu links on the right side of a card*/
-
 .menuWrap {
   display: grid;
   padding-top: 4em;
@@ -82,6 +79,8 @@ img {
 
 .contact {
   grid-area: contact;
+  display: grid;
+  justify-content: center;
 }
 
 .articles {
@@ -172,7 +171,6 @@ a:hover {
 }
 
 /* spacing */
-
 .header {
   margin-left: 7%;
 }
@@ -183,7 +181,7 @@ a:hover {
 }
 
 .about {
-  margin-top: 5em;
+  /* margin-top: 1em; */
   margin-left: 7%;
   margin-right: 7%;
 }
@@ -200,4 +198,64 @@ a:hover {
   50% {
     opacity: 0;
   }
+}
+
+/* container for form elements  */
+#Form {
+  display: grid;
+
+  margin-top: 2em;
+  width: 500px;
+
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+/* label styling */
+label {
+  padding-left: 1.6em;
+  padding-bottom: 0.5em;
+}
+
+/* styles for form text input */
+.formText {
+  background: linear-gradient(
+    to bottom,
+    #0300ad,
+    30%,
+    #010057
+  ); /* blue gradient */
+  border: 2px solid #c8c3bd;
+  border-radius: 7px;
+  padding: 1em;
+  margin-bottom: 2em;
+
+  font-family: inherit;
+  color: inherit;
+}
+
+/* styles for form message  */
+#Message {
+  height: 10em;
+}
+
+/* styles for form button */
+#submit {
+  background: linear-gradient(
+    to bottom,
+    #0300ad,
+    30%,
+    #010057
+  ); /* blue gradient */
+  border: 2px solid #c8c3bd;
+  border-radius: 7px;
+
+  padding: 1em;
+  width: 10em;
+  font-family: inherit;
+  color: inherit;
+
+  justify-self: center;
+
+  margin-bottom: 10em;
 }
