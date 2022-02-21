@@ -108,12 +108,42 @@
     <section class="contact">
       <p>CONTACT</p>
 
-      <form>
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Subject" />
-        <input type="text" placeholder="Message" />
-        <input type="submit" value="Submit" />
+      <form
+        id="Form"
+        class="gform"
+        action="https://script.google.com/macros/s/AKfycbzcgbnlOWLrWQgp_TmWyM9EEr4-I02PllJ5b1Y_jL65Ifabka-BP4lGqU2LJeVL4noxGw/exec"
+        method="POST"
+      >
+        <label for="Email">Email</label>
+        <input
+          type="email"
+          id="Email"
+          class="gform"
+          name="email"
+          placeholder="Email"
+        />
+
+        <label for="Subject">Subject</label>
+        <input
+          type="text"
+          id="Subject"
+          class="gform"
+          name="subject"
+          placeholder="Subject"
+        />
+
+        <label for="Message">Message</label>
+        <textarea
+          type="text"
+          id="Message"
+          class="gform"
+          name="message"
+          placeholder="Message"
+        ></textarea>
+        <button name="submit">Submit</button>
       </form>
     </section>
+
+    <script src="js/handleForm.js"></script>
   </body>
 </html>
