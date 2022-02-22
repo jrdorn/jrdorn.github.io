@@ -54,13 +54,7 @@ html {
 }
 img {
   width: 49.5vw;
-  /* height: 20vh; */
   border-radius: 7px;
-}
-@media (min-width: 627px) {
-  .img {
-    width: 30vw;
-  }
 }
 
 /* vertically align menu links on the right side of a card*/
@@ -299,6 +293,8 @@ label {
   display: flex;
   justify-self: center;
   justify-content: space-between;
+
+  margin-top: 1em;
 
   width: 200px;
 }

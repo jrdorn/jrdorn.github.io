@@ -5,23 +5,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/carousel.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
   <body id="index">
     <!-- TODO 
       
+      --handle responsive images
 
-
-          --refactor handleForm
-
-      
-        --gaps and spacing between PROJECTS and cards, individual grid sections and each other
+      --gaps and spacing between PROJECTS and cards, individual grid sections and each other
         "see projects" or "next" <a href="#projects"> ?
 
+      --refactor handleForm
 
-
-
+    
       --README
           design decision: 
             wanted to create custom JS/CSS carousel with infinite slider,
@@ -34,8 +30,9 @@
               was removed, element.getBoundingClientRect(),  in the end scrapped it and went with fade-in/fade-out text
               against a single card
 
-      Write Bitsox case study
+      --Write Bitsox case study
 
+      
       || Future
           
           ~ Add 3 slider buttons, red-purple-green
@@ -75,7 +72,7 @@
 
           <div class="projectCard">
             <div class="imgWrap">
-              <img src="img/break-it.png" />
+              <img id="breakitImg" src="img/break-it.png" />
             </div>
 
             <div class="menuWrap">
@@ -105,7 +102,7 @@
 
           <div class="projectCard">
             <div class="imgWrap">
-              <img src="img/bitsox.png" />
+              <img id="bitsoxImg" src="img/bitsox.png" />
             </div>
 
             <div class="menuWrap">
@@ -136,7 +133,7 @@
           </p>
           <div class="projectCard">
             <div class="imgWrap">
-              <img src="img/quickbite.png" />
+              <img id="quickbiteImg" src="img/quickbite.png" />
             </div>
 
             <div class="menuWrap">
