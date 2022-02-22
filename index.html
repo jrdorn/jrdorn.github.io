@@ -11,26 +11,16 @@
   <body id="index">
     <!-- TODO 
       
-      --carousel
 
-        -Keep card constant, and fade content in and out  
-        
-        -Add 3 slider buttons, red-purple-green
 
-        Swap moving cards for fade-in/fade-out
+          --refactor handleForm
+
       
-
-
-
-
-      --gaps and spacing between PROJECTS and cards, individual grid sections and each other
+        --gaps and spacing between PROJECTS and cards, individual grid sections and each other
         "see projects" or "next" <a href="#projects"> ?
 
-      --responsive UI: increase project margins on large screens
 
-      --404 page
 
-      --refactor handleForm
 
       --README
           design decision: 
@@ -45,6 +35,12 @@
               against a single card
 
       Write Bitsox case study
+
+      || Future
+          
+          ~ Add 3 slider buttons, red-purple-green
+          ~ Fade in/out or card animatino
+
 
     -->
 
@@ -72,7 +68,7 @@
 
       <div class="carousel">
         <!-- Break It -->
-        <article name="Break It" class="slide">
+        <article name="Break It" class="hidden slide">
           <p>BREAK IT:</p>
           <br />
           <p>Browser-based brick breaker arcade game</p>
@@ -94,13 +90,12 @@
               <a href="https://trello.com/b/FCnRqPFU/break-it" target="_blank"
                 >- Trello</a
               >
-              <a href="#">- Case Study</a>
             </div>
           </div>
         </article>
 
         <!-- Bitsox -->
-        <article name="Bitsox" class="hidden slide">
+        <article name="Bitsox" class="slide">
           <p>BITSOX:</p>
           <br />
           <p>

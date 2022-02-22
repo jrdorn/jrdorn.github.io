@@ -1,9 +1,9 @@
 (function () {
   let slideArray = Array.from(document.querySelectorAll(".slide")); //dynamic list of slide positions
 
-  const card = document.querySelector("#card");
+  //   const card = document.querySelector("#card");
 
-  let carousel = document.querySelector(".carousel");
+  //   let carousel = document.querySelector(".carousel");
 
   const leftButton = document.querySelector("#leftButton");
   const rightButton = document.querySelector("#rightButton");
