@@ -264,6 +264,8 @@ label {
   justify-self: center;
 
   margin-bottom: 10em;
+
+  cursor: pointer;
 }
 
 /* || Carousel styles */
