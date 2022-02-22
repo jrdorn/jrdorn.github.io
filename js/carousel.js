@@ -20,12 +20,20 @@
 
     //
     let slideRight = () => {
-      //
+      slideArray[1].classList.add("hidden"); //
+
+      slideArray[2].classList.remove("hidden"); //
+
+      slideArray = spliceAndSlide(0, 2); //
     };
 
     //
     let slideLeft = () => {
-      //
+      slideArray[1].classList.add("hidden"); //
+
+      slideArray[0].classList.remove("hidden"); //
+
+      slideArray = spliceAndSlide(2, 0); //
     };
 
     //
