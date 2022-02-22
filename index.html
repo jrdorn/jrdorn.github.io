@@ -13,16 +13,15 @@
       
       --carousel
 
-
-        Find new carousel?
-        Keep card constant, and fade content in and out (and add 3 slider buttons
+        -Keep card constant, and fade content in and out  
+        
+        -Add 3 slider buttons, red-purple-green
 
         
-        -UI on larger screens: keep exact position of the current slide 
+      Swap moving cards for fade-in/fade-out
 
 
-        
-
+      
 
       --gaps and spacing between PROJECTS and cards, individual grid sections and each other
         "see projects" or "next" <a href="#projects"> ?
@@ -34,6 +33,16 @@
       --refactor handleForm
 
       --README
+          design decision: 
+            wanted to create custom JS/CSS carousel with infinite slider,
+            use splice to shuffle cards so you wouldn't hover past multiple
+            cards like I saw in many carousels on codepen, 
+            using css animations for smooth transitions,
+              wanting to keep moved element in place after adding transform,
+              made mock element to copy the moved element and place it over to cover
+              it and hide the transition which would display once the transform class
+              was removed, element.getBoundingClientRect(),  in the end scrapped it and went with fade-in/fade-out text
+              against a single card
 
       Write Bitsox case study
 
@@ -45,13 +54,16 @@
     </section>
 
     <!-- Information about me -->
-    <section class="about card">
-      <div>ABOUT:</div>
-      <p>
-        I'm a software developer from Chicago who loves building projects that
-        help people. When not coding you can find me reading nonfiction, playing
-        the djembe, and practicing Vipassana meditation.
-      </p>
+    <section class="about">
+      <h3>ABOUT</h3>
+
+      <div class="card">
+        <p>
+          I'm a software developer from Chicago who loves building projects that
+          help people. When not coding you can find me reading nonfiction,
+          playing the djembe, and practicing Vipassana meditation.
+        </p>
+      </div>
     </section>
 
     <!-- List of main personal projects -->
@@ -59,110 +71,95 @@
       <h3>PROJECTS</h3>
 
       <div class="carousel">
-        <div class="slide" id="breakitSlide">
-          <!-- Break It -->
-          <article name="Break It" class="card">
-            <p>BREAK IT:</p>
-            <br />
-            <p>Browser based brick-breaker arcade game</p>
+        <!-- Break It -->
+        <article name="Break It" class="">
+          <p>BREAK IT:</p>
+          <br />
+          <p>Browser-based brick breaker arcade game</p>
 
-            <div class="projectCard">
-              <div class="imgWrap">
-                <img src="img/break-it.png" />
-              </div>
-
-              <div class="menuWrap">
-                <a href="https://github.com/jrdorn/Break-it" target="_blank"
-                  >- Github</a
-                >
-
-                <a href="https://break-it.herokuapp.com/" target="_blank"
-                  >- Deploy</a
-                >
-
-                <a href="https://trello.com/b/FCnRqPFU/break-it" target="_blank"
-                  >- Trello</a
-                >
-              </div>
+          <div class="projectCard">
+            <div class="imgWrap">
+              <img src="img/break-it.png" />
             </div>
-          </article>
-        </div>
 
-        <div class="slide" id="bitsoxSlide">
-          <!-- Bitsox -->
-          <article name="Bitsox" class="card">
-            <p>BITSOX:</p>
-            <br />
-            <p>
-              Ecommerce platform where users can purchase socks with
-              cryptocurrencies
-            </p>
+            <div class="menuWrap">
+              <a href="https://github.com/jrdorn/Break-it" target="_blank"
+                >- Github</a
+              >
 
-            <div class="projectCard">
-              <div class="imgWrap">
-                <img src="img/bitsox.png" />
-              </div>
+              <a href="https://break-it.herokuapp.com/" target="_blank"
+                >- Deploy</a
+              >
 
-              <div class="menuWrap">
-                <a href="https://github.com/jrdorn/Bitsox" target="_blank"
-                  >- Github</a
-                >
-
-                <a href="https://bitsox.herokuapp.com/" target="_blank"
-                  >- Deploy</a
-                >
-
-                <a href="https://trello.com/b/7Wxcjvyx/bitsox" target="_blank"
-                  >- Trello</a
-                >
-
-                <a href="#" target="_blank">- Case Study</a>
-                <!-- Look up examples of UX case studies -->
-              </div>
+              <a href="https://trello.com/b/FCnRqPFU/break-it" target="_blank"
+                >- Trello</a
+              >
+              <a href="#">- Case Study</a>
             </div>
-          </article>
-        </div>
+          </div>
+        </article>
 
-        <div class="slide" id="quickbiteSlide">
-          <!-- QuickBite -->
-          <article name="QuickBite" class="card">
-            <p>QUICKBITE:</p>
-            <br />
-            <p>
-              Node CLI app that provides walking directions to local restaurants
-            </p>
-            <div class="projectCard">
-              <div class="imgWrap">
-                <img src="img/quickbite.png" />
-              </div>
+        <!-- Bitsox -->
+        <article name="Bitsox" class="hidden">
+          <p>BITSOX:</p>
+          <br />
+          <p>
+            Ecommerce platform where users can purchase socks with
+            cryptocurrencies
+          </p>
 
-              <div class="menuWrap">
-                <a href="https://github.com/jrdorn/QuickBite" target="_blank"
-                  >- Github</a
-                >
-
-                <a
-                  href="https://www.npmjs.com/package/quickbite"
-                  target="_blank"
-                  >- NPM</a
-                >
-
-                <a
-                  href="https://trello.com/b/0ehvyRc8/quickbite"
-                  target="_blank"
-                  >- Trello</a
-                >
-              </div>
+          <div class="projectCard">
+            <div class="imgWrap">
+              <img src="img/bitsox.png" />
             </div>
-          </article>
-        </div>
+
+            <div class="menuWrap">
+              <a href="https://github.com/jrdorn/Bitsox" target="_blank"
+                >- Github</a
+              >
+
+              <a href="https://bitsox.herokuapp.com/" target="_blank"
+                >- Deploy</a
+              >
+
+              <a href="https://trello.com/b/7Wxcjvyx/bitsox" target="_blank"
+                >- Trello</a
+              >
+
+              <a href="#" target="_blank">- Case Study</a>
+              <!-- Look up examples of UX case studies -->
+            </div>
+          </div>
+        </article>
+
+        <!-- QuickBite -->
+        <article name="QuickBite" class="hidden">
+          <p>QUICKBITE:</p>
+          <br />
+          <p>
+            Node CLI app that provides walking directions to local restaurants
+          </p>
+          <div class="projectCard">
+            <div class="imgWrap">
+              <img src="img/quickbite.png" />
+            </div>
+
+            <div class="menuWrap">
+              <a href="https://github.com/jrdorn/QuickBite" target="_blank"
+                >- Github</a
+              >
+
+              <a href="https://www.npmjs.com/package/quickbite" target="_blank"
+                >- NPM</a
+              >
+
+              <a href="https://trello.com/b/0ehvyRc8/quickbite" target="_blank"
+                >- Trello</a
+              >
+            </div>
+          </div>
+        </article>
       </div>
-
-      <!-- empty slide to use in transitions:
-      copy selected slide, display over it to hide removal of CSS transition 
-      (chosen because it renders smooother than pure JS animations)
-      -->
-      <div id="tempSlide" class="slide hidden"></div>
 
       <!-- Carousel slider buttons -->
       <div id="cbuttonContainer">
