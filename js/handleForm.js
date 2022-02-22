@@ -1,12 +1,10 @@
-//credits @dalton-cole
-
 (function () {
   // get all data in form and return object
   function getFormData(form) {
-    var elements = form.elements;
-    var honeypot;
+    let elements = form.elements;
+    let honeypot;
 
-    var fields = Object.keys(elements)
+    let fields = Object.keys(elements)
       .filter(function (k) {
         if (elements[k].name === "honeypot") {
           honeypot = elements[k].value;
@@ -26,18 +24,18 @@
         return self.indexOf(item) == pos && item;
       });
 
-    var formData = {};
+    let formData = {};
     fields.forEach(function (name) {
-      var element = elements[name];
+      let element = elements[name];
 
       // singular form elements just have one value
       formData[name] = element.value;
 
       // when our element has multiple items, get their values
       if (element.length) {
-        var data = [];
-        for (var i = 0; i < element.length; i++) {
-          var item = element.item(i);
+        let data = [];
+        for (let i = 0; i < element.length; i++) {
+          let item = element.item(i);
           if (item.checked || item.selected) {
             data.push(item.value);
           }
@@ -54,13 +52,14 @@
     return { data: formData, honeypot: honeypot };
   }
 
-  function handleFormSubmit(event) {
-    event.preventDefault(); // we are submitting via xhr below
-    var form = event.target;
-    var formData = getFormData(form);
-    var data = formData.data;
+  function handleFormSubmit(e) {
+    //prevent page refresh
+    e.preventDefault();
+    let form = e.target;
+    let formData = getFormData(form);
+    let data = formData.data;
 
-    // If a honeypot field is filled, assume it was done so by a spam bot.
+    // detect spam bot
     if (formData.honeypot) {
       return false;
     }
@@ -75,7 +74,7 @@
       }
     };
     // url encode form data for sending as post data
-    var encoded = Object.keys(data)
+    let encoded = Object.keys(data)
       .map(function (k) {
         return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
       })
@@ -85,8 +84,8 @@
 
   function loaded() {
     // bind to the submit event of our form
-    var forms = document.querySelectorAll("form.gform");
-    for (var i = 0; i < forms.length; i++) {
+    let forms = document.querySelectorAll("form.gform");
+    for (let i = 0; i < forms.length; i++) {
       forms[i].addEventListener("submit", handleFormSubmit, false);
     }
   }

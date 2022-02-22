@@ -172,18 +172,30 @@ a:hover {
   margin-left: 7%;
 }
 
-.projects {
-  margin-left: 1.5em;
-  margin-right: 1.5em;
-  display: grid;
-}
-
 .about {
   margin-left: 7%;
   margin-right: 7%;
+  margin-top: 17vh;
+  margin-bottom: 40vh;
+
+  max-width: 500px;
+
+  justify-self: center;
+}
+
+.projects {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-bottom: 15vh;
+  display: grid;
 }
 
 .error {
+  margin-left: 7%;
+}
+
+/* projects title */
+#projectTitle {
   margin-left: 7%;
 }
 
