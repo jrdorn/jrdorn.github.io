@@ -93,6 +93,22 @@
         tempSlide.innerHTML = slideArray[1].innerHTML;
         tempSlide.classList.remove("hidden");
 
+        // tempSlide.style.top = slideArray[0].offsetTop + "px";
+        // tempSlide.style.left = slideArray[1].offsetLeft + "px";
+        tempSlide.style.height = slideArray[1].offsetHeight + "px";
+        tempSlide.style.width = slideArray[1].offsetWidth + "px";
+
+        let coordinatesOfSlideToHide = slideArray[1].getBoundingClientRect;
+        // tempSlide.style.top = coordinatesOfSlideToHide.top;
+        // tempSlide.style.right = coordinatesOfSlideToHide.right;
+        // tempSlide.style.bottom = coordinatesOfSlideToHide.bottom;
+        tempSlide.style.left = coordinatesOfSlideToHide.left + "px";
+
+        //~~~~~~~~~~
+        //
+        //
+        // ~~~~~~~~
+
         //
         slideArray[1].classList.remove("slideRight");
         slideArray[1].style.left = "0";
@@ -101,10 +117,10 @@
       }, 2000);
 
       //
-      setTimeout(function () {
-        //
-        tempSlide.classList.add("hidden");
-      }, 3000);
+      //   setTimeout(function () {
+      //     //
+      //     tempSlide.classList.add("hidden");
+      //   }, 3000);
       //
     };
 

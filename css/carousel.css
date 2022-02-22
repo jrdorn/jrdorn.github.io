@@ -53,15 +53,15 @@
 
 /* temporary slide to smooth transitions  */
 #tempSlide {
-  /* border: 1px solid red; */
-  background: #0d0f10;
-  height: 50%;
+  border: 1px solid red;
+  /* background: #0d0f10; */
+  /* height: 50%; */
   z-index: 3;
-  left: 0;
-  top: 25.6em;
+  /* left: 0; */
+  /* top: 25.6em; */
 
-  padding-left: 0.7em;
-  padding-right: 0.7em;
+  /* padding-left: 0.7em;
+  padding-right: 0.7em; */
 }
 .hidden {
   display: none;
