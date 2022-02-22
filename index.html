@@ -12,25 +12,22 @@
     <!-- TODO 
       
       --fix carousel slider functionality
-  
-        instead of sliding
-          keep constant card size
-          array of 3 projects
-          set current display to 'none'
-          ~1s fade-in next/ prev display
-
-        or, keep sliding
           add gaps between cards
           do not slide past multiple cards
 
 
       --fix carousel styles and responsive UI
 
+      --gaps and spacing between PROJECTS and cards, individual grid sections and each other
+        "see projects" or "next" <a href="#projects"> ?
+
       --responsive UI: increase project margins on large screens
 
       --404 page
 
       --refactor handleForm
+
+      --README
 
       Write Bitsox case study
 
@@ -56,7 +53,36 @@
       <h3>PROJECTS</h3>
 
       <div class="carousel">
-        <div class="slide">
+        <div class="slide" id="breakitSlide">
+          <!-- Break It -->
+          <article name="Break It" class="card">
+            <p>BREAK IT:</p>
+            <br />
+            <p>Browser based brick-breaker arcade game</p>
+
+            <div class="projectCard">
+              <div class="imgWrap">
+                <img src="img/break-it.png" />
+              </div>
+
+              <div class="menuWrap">
+                <a href="https://github.com/jrdorn/Break-it" target="_blank"
+                  >- Github</a
+                >
+
+                <a href="https://break-it.herokuapp.com/" target="_blank"
+                  >- Deploy</a
+                >
+
+                <a href="https://trello.com/b/FCnRqPFU/break-it" target="_blank"
+                  >- Trello</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="slide" id="bitsoxSlide">
           <!-- Bitsox -->
           <article name="Bitsox" class="card">
             <p>BITSOX:</p>
@@ -91,7 +117,7 @@
           </article>
         </div>
 
-        <div class="slide">
+        <div class="slide" id="quickbiteSlide">
           <!-- QuickBite -->
           <article name="QuickBite" class="card">
             <p>QUICKBITE:</p>
@@ -124,36 +150,13 @@
             </div>
           </article>
         </div>
-
-        <div class="slide">
-          <!-- Break It -->
-          <article name="Break It" class="card">
-            <p>BREAK IT:</p>
-            <br />
-            <p>Browser based brick-breaker arcade game</p>
-
-            <div class="projectCard">
-              <div class="imgWrap">
-                <img src="img/break-it.png" />
-              </div>
-
-              <div class="menuWrap">
-                <a href="https://github.com/jrdorn/Break-it" target="_blank"
-                  >- Github</a
-                >
-
-                <a href="https://break-it.herokuapp.com/" target="_blank"
-                  >- Deploy</a
-                >
-
-                <a href="https://trello.com/b/FCnRqPFU/break-it" target="_blank"
-                  >- Trello</a
-                >
-              </div>
-            </div>
-          </article>
-        </div>
       </div>
+
+      <!-- empty slide to use in transitions:
+      copy selected slide, display over it to hide removal of CSS transition 
+      (chosen because it renders smooother than pure JS animations)
+      -->
+      <div id="tempSlide" class="slide hidden"></div>
 
       <!-- Carousel slider buttons -->
       <div id="cbuttonContainer">

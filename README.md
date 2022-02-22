@@ -4,8 +4,7 @@ Personal website
 
 This is my personal website. I intend to showcase my work here, and to write blog posts about topics that interest me.
 
-I drew inspiration from Michael McKeever's personal website and crowdsourced Reddit opinions of what makes a good
-portofolio.
+I drew design inspiration from Final Fantasy VII and the command line.
 
 ## Status
 
@@ -20,5 +19,6 @@ This project is currently under development. Future additions include a contact 
 
 Project is created with:
 
-- HTML5
-- CSS3
+- HTML
+- CSS
+- JavaScript
