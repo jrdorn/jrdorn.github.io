@@ -2,18 +2,18 @@ Personal website
 
 ## Introduction
 
-This is my personal website. I intend to showcase my work here, and to write blog posts about topics that interest me.
+This is my personal website. I intend to showcase projects I'm working on here, and to write blog posts about topics that interest me.
 
 I drew design inspiration from Final Fantasy VII and the command line.
 
 ## Status
 
-This project is currently under development. Future additions include a contact form, blog posts, and fading SVG links.
+This project is currently under development. Future additions include blog posts, animations, and OpenGL graphics.
 
 ## Features
 
-- View my GitHub, CodePen, Dribbble, and LinkedIn accounts
-- Screenshots of work and personal projects
+- Carousel of portfolio projects with links to source code and live websites
+- Contact form
 
 ## Technologies
 
