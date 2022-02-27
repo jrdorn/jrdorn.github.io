@@ -54,6 +54,7 @@ html {
 }
 img {
   width: 49.5vw;
+  max-width: 615px;
   border-radius: 7px;
 }
 
@@ -184,10 +185,9 @@ a:hover {
 }
 
 .projects {
-  margin-left: 1.5em;
-  margin-right: 1.5em;
-  margin-bottom: 15vh;
+  margin-bottom: 33vh;
   display: grid;
+  justify-content: center;
 }
 
 .error {
@@ -286,6 +286,9 @@ label {
   padding-right: 1em;
 
   height: 50vh;
+
+  max-height: 600px;
+  max-width: 1000px;
 }
 @media (min-width: 627px) {
   .carousel {
