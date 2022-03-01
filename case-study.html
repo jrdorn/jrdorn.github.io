@@ -24,37 +24,412 @@
       <!-- Navigation -->
       <nav class="entryNav">
         <ul>
-          <li><a href="#">Point1</a></li>
-          <li><a href="#">Point1a</a></li>
-          <li><a href="#">Point1b</a></li>
-          <li><a href="#">Point2</a></li>
-          <li><a href="#">Point3</a></li>
+          <li><span>1</span><a href="#Intro">Intro</a></li>
+
+          <li><span>2</span><a href="#Problem">Problem</a></li>
+
+          <li><span>3</span><a href="#Design">Design</a></li>
+          <li class="subList">
+            <span>3.1</span><a href="#Organization">Organization</a>
+          </li>
+          <li class="subList">
+            <span>3.2</span><a href="#Auth">Authentication</a>
+          </li>
+          <li class="subList">
+            <span>3.3</span><a href="#Database">Database</a>
+          </li>
+
+          <li><span>4</span><a href="#Implementation">Implementation</a></li>
+          <li class="subList">
+            <span>4.1</span><a href="#Obstacles">Obstacles</a>
+          </li>
+          <li class="subList">
+            <span>4.2</span><a href="#Lessons">Lessons</a>
+          </li>
+
+          <li><span>5</span><a href="#Future">Future</a></li>
         </ul>
       </nav>
 
+      <!-- Intro -->
       <section class="entrySection">
-        <h2 class="sectionHead">Point1</h2>
-        <p class="sectionText">radaradarada</p>
+        <h2 id="Intro" class="sectionHead">Intro</h2>
+        <p>
+          Currently many people are curious about cryptocurrency and may store
+          some on a centralized exchange like Coinbase or even hold their own
+          private keys, but crypto is still not commonly used to purchase
+          physical goods.
+        </p>
+        <br />
+        <p>
+          Bitsox is an ecommerce site that allows people to purchase socks with
+          cryptocurrency.
+        </p>
+        <br />
 
+        <p>
+          This will allow users to spend their crypto conveniently, safely, and
+          securely.
+        </p>
+        <br />
+
+        <p>
+          Bitsox also aims to keep costs and shipping as low as possible, and to
+          eventually offer the option to ship worldwide so that unbanked and
+          marginalized people across the globe have access to a permissionless
+          financial ecosystem.
+        </p>
+      </section>
+
+      <!-- Problem -->
+      <section class="entrySection">
+        <h2 id="Problem" class="sectionHead">Problem</h2>
+
+        <p>
+          Constraints include international shipping, allocating adequate time
+          for site design and maintenance, providing responsive customer
+          support, and scaling the platform.
+        </p>
+        <br />
+
+        <p>
+          Quality will be controlled through unit tests which rigorously verify
+          the integrity of the platform.
+        </p>
+        <br />
+
+        <p>
+          Future expansions could include integration and collaboration with
+          DAOs and NFT projects, such as providing special offers to a DAO or a
+          unique sock displaying one's digital art NFT on a sock. Users may also
+          mint their own NFTs to represent ownership of their sock on the Solana
+          blockchain.
+        </p>
+      </section>
+
+      <!-- Design -->
+      <section class="entrySection">
+        <h2 id="Design" class="sectionHead">Design</h2>
+
+        <p>
+          To start tackling these problems, I first thought about the core
+          features an ecommerce site must have. From there, I broke it down into
+          subcomponents common to multiple pages (headers, footers) and unique
+          components (login button). I then searched Reddit to see what other
+          developers were thinking about when building their projects, and I
+          took note of the importance of fulfilling the leqal requirements of
+          starting a business, writing unit tests, and using 2FA. Then I turned
+          that initial text document into the flowchat displayed below.
+        </p>
+        <br />
+        <div class="csImg">
+          <img src="img/cs/siteplan.png" />
+        </div>
+        <br />
+
+        <p>
+          Once I had a mental map of the main pages of my website and the
+          components that made them up, I used Keynote to create initial
+          wireframes for each page. Keynote enabled me to prototype and move
+          various components around until I settled on a design that felt right.
+        </p>
+        <br />
+        <div class="csImg">
+          <img src="img/cs/mobileWF.png" />
+        </div>
+        <br />
+
+        <!-- Organization -->
         <section class="subSection">
-          <h3 class="subsectionHead">Point1a</h3>
-          <p class="subsectionText">radarada</p>
+          <h3 id="Organization" class="subsectionHead">Organization</h3>
+          <p>
+            Before working on Bitsox I had built many single and multi-page
+            websites using HTML, CSS, and JS, as well as a Node CLI app and pure
+            JavaScript arcade game. I had also played around with React a bit
+            but had never built a project of this scale. Initially I kept track
+            of my ideas and progress in Google docs, but early on I felt the
+            need to find a better way to organize my project and work flow.
+          </p>
+          <br />
+
+          <p>
+            Trello was a great fit for this. I was able to setup a Kanban board
+            and upload my wireframes, prototypes, and design ideas. It felt
+            intuitive moving chunks of my old Google doc into relevant sections
+            that I could easily reference when I wanted to focus on something
+            specific (routing, for instance).
+          </p>
+          <br />
+
+          <p>
+            One of my favorite parts about moving to Trello was adding "standup"
+            sections. Before starting to work on my project each day, I could
+            take time to review and reflect on what I had accomplished the day
+            before, what pain points I encountered, how I could anticipate and
+            solve similar issues in the future, how to prioritize daily tasks,
+            and feel good about the progress I had made.
+          </p>
         </section>
 
+        <!-- JWT vs SWT vs SAML -->
         <section class="subSection">
-          <h3 class="subsectionHead">Point1b</h3>
-          <p class="subsectionText">radarada</p>
+          <h3 id="Auth" class="subsectionHead">Authentication</h3>
+          <p>
+            Rather than using authentication middleware such as Passport.js, I
+            wanted to build my own authentication and authorization system to
+            understand the process "under the hood." I do not want to rely on
+            platforms like Google or Facebook for authentication, and I want to
+            prioritize user privacy.
+          </p>
+          <br />
+
+          <p>
+            JWT (JSON web tokens) stood out as a popular way to achieve statelss
+            authentication and forego sessions.
+          </p>
+          <br />
+
+          <p>
+            They are supported by all devices, simpler than SAML, and more
+            powerful than SWT. JWT are easy to use within HTTP, which would fit
+            in with my Bitsox-server REST API. I plan to send them in a cookie
+            with a CSRF token (to mitigate cross-site request forgeries) and
+            pass the access token within the Authorization header.
+          </p>
+          <br />
+
+          <p>
+            I want to send data to the user, have them send it back, and verify
+            that data has not been tampered with (so they can access private
+            pages for only their account, not another user's account).
+          </p>
+          <br />
+
+          <p>
+            An alternative I considered was authenticating with a username and
+            secret token. Then, the user would send a request to the server over
+            TSL, which would provide an encryption layer. However, this approach
+            would introduce a single point of failure of the centralized token
+            store, and my app would not be able to function without that
+            synchronous dependency on the centralized store.
+          </p>
+          <br />
+
+          <p>
+            There are tradeoffs to using JWT auth, but for my use case they are
+            manageable. JWT expire at set intervals, so I will use refresh
+            tokens. They are slow by design because JWT are signed with
+            cryptographic algorithms, but this tradeoff is worth it for the
+            security. JWT are also not easily revocable (which could lead to a
+            deleted user still accessing private pages) but I will implement a
+            refresh token revoke event.
+          </p>
+        </section>
+
+        <!-- Postgres vs MongoDB -->
+        <section class="subSection">
+          <h3 id="Database" class="subsectionHead">Database</h3>
+
+          <p>
+            Many self-study guides advised choosing MongoDB over other options
+            like MySQL and Postgres, but I wanted to understand the pros and
+            cons of each technology and what would be the best fit for Bitsox.
+          </p>
+          <br />
+
+          <p>
+            I wanted to securely store user emails and passwords in a database.
+            Those users would have options connected to them, including a
+            profile picture and boolean values of whether or not they enabled
+            2FA and would like to receive an email newsletter.
+          </p>
+          <br />
+
+          <p>
+            Once they are logged in, users can add or remove items to their cart
+            or wishlist. So, there are three places an item could be listed, and
+            it could be listed in all three simultaneously: the shop inventory,
+            a user's cart, and a user's wishlist. And once a user completes the
+            checkout process and purchases an item, the quantity in the shop
+            inventory must be updated. If all items of a type are purchased, it
+            will be removed from all other user's carts and wishlists (along
+            with a message stating the item is sold out) and will not be
+            displayed in the shop inventory.
+          </p>
+          <br />
+
+          <p>
+            I learned that there are two main types of databases, SQL/relational
+            (like Postgres) and NoSQL/non-relational (like MongoDB). I chose
+            Postgres over MongoDB because highly structured relations solved my
+            app's needs and worth the additional effort to learn SQL and having
+            to set up a schema.
+          </p>
+
+          <p>
+            <br />
+          </p>
+
+          <p>
+            I deployed Bitsox to Heroku, which has native Postgres integration.
+            In addition to the highly structured data with relations between
+            objects offered by Postgres, I was excited to learn SQL and
+            transferrable fundamental skills that could be applied to other apps
+            with complex data relationships. Another plus is that, as of
+            Postgres 9.4, you can store and query JSON with jsonb. This lets me
+            work with the database as if it was NoSQL, in case I needed that
+            functionality.
+          </p>
         </section>
       </section>
 
+      <!-- Implementation -->
       <section class="entrySection">
-        <h2 class="sectionHead">Point2</h2>
-        <p class="sectionText">radaradarada</p>
+        <h2 id="Implementation" class="sectionHead">Implementation</h2>
+
+        <p>
+          Below are screenshots of my current database setup. From my dashboard
+          you can see the provisioned PostgreSQL service.
+        </p>
+        <br />
+        <div class="csImg">
+          <img src="img/cs/heroku-pg.png" />
+        </div>
+        <br />
+
+        <p>
+          Using the CLI I can create, read, update, and delete information to
+          the remote database from the terminal.
+        </p>
+        <br />
+        <div class="csImg">
+          <img src="img/cs/database.png" />
+        </div>
+        <br />
+
+        <p>
+          Calls to bitsox-server.herokuapp.com/api/shop will get the shop
+          inventory from the database and return JSON.
+        </p>
+        <br />
+        <div class="csImg">
+          <img src="img/cs/server-shop.png" />
+        </div>
+        <br />
+
+        <!-- Obstacles -->
+        <section class="subSection">
+          <h3 id="Obstacles" class="subsectionHead">Obstacles</h3>
+
+          <p>
+            Some things that surprised me are how large dependencies can be and
+            how much time can be spend installing node modules. I had previously
+            only worked on smaller projects, but I was developing Bitsox
+            concurrently with a Hackathon project. In my mind node modules were
+            just text files that should be small, but I've come to appreciate
+            implementing features in the smallest and most efficient way
+            possible.
+          </p>
+          <br />
+
+          <p>
+            It was also interesting to learn to appreciate how things that
+            appear small and simple can get incredibly complex very quickly. As
+            a user, logging in and creating an account looks very simple. You
+            enter your username and password, click a button, and it "just
+            works." But things that appear simple or look like they "just work"
+            are the result of human-centered design that makes the process user
+            friendly. What I first thought of as just "logging in" turned into
+            questions about how I'm going to encrypt and securely store user
+            passwords, how to authenticate and authorize users on private pages,
+            how to design the UI for those pages and nested routes, and how to
+            handle JWTs.
+          </p>
+        </section>
+
+        <!-- Lessons -->
+        <section class="subSection">
+          <h3 id="Lessons" class="subsectionHead">Lessons</h3>
+
+          <p>
+            Bitsox is special to me as it's the first large personal project
+            I've decided to undertake using everything I've learned from my
+            self-study courses. Using flexbox and grid to build a responsive and
+            accessible UI, designing a REST API that fetches data and returns
+            JSON, using React functional components, setting up a Redux store,
+            and building and deploying my site to Heroku.
+          </p>
+          <br />
+
+          <p>
+            One of the most useful things I have learned and continue to learn
+            about is how to think through obstacles and ask the right questions
+            on Stackoverflow. For example, at first I had trouble connecting to
+            my Heroku Postgres database locally despite the fact that it would
+            connect once deployed. My client would make a call to the
+            server-side API, which would then make a call to Postgres and return
+            the results to the server and then to the client. I wrote a list of
+            the possible reasons it might not be working.
+          </p>
+          <br />
+
+          <p>
+            "The async functions on the client or server may not be returning
+            properly." Logging the returned result to the client revealed a
+            pending promise, which led me to correctly handling the request and
+            response.
+          </p>
+          <br />
+
+          <p>
+            After correctly chaining then statements to my promise, I still was
+            unable to get my data. The next item on the list was "Postgres may
+            not have the data." I entered in a new table from the CLI, and did
+            not know if it was sent properly to the remote database. By checking
+            the Postgres panel on Heroku, I could confirm that it was
+          </p>
+          <br />
+
+          <p>
+            I was getting warmer. "The server-side Pool may not be connecting
+            properly." Next I logged the environment variable DATABASE_URL to
+            verify it was read properly in the local environment, and it
+            returned "undefined". Then I had pointed questions to search on
+            Stackoverflow to connect Heroku Postgres locally, and got and set
+            the environment variable for my local test environment from Heroku's
+            dashboard, and set ssl: rejectUnauthorized to false.
+          </p>
+        </section>
       </section>
 
+      <!-- Future -->
       <section class="entrySection">
-        <h2 class="sectionHead">Point3</h2>
-        <p class="sectionText">radaradarada</p>
+        <h2 id="Future" class="sectionHead">Future</h2>
+        <p class="sectionText">
+          Next on my list of features to implement is custom user
+          authentication, finalizing the Redux store architecture, and unit
+          tests for the server and client app. Users will be able to submit a
+          username and password to create an account, which I will then salt and
+          hash. JWT will enable stateless authentication and allow them to
+          access their private account page, where they can view their wishlist.
+          JSON and shop inventory images are already server side, and I just
+          need to write API requests to get them and handle them in the Redux
+          store.
+        </p>
+        <br />
+
+        <p>
+          Mock UI for the Profile page can be seen below. If users click the
+          Profile page before they are authenticated, they will encounter the
+          Auth page where they can choose to login or create a new account. Once
+          the user is logged in, clicking on the Profile tab will navigate to
+          their private Profile page in which they have the option to update
+          their account info and view their wishlist.
+        </p>
+        <br />
+        <div class="csImg">
+          <img src="img/cs/update-profile.png" />
+        </div>
       </section>
     </section>
   </body>

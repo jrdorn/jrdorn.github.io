@@ -350,12 +350,18 @@ label {
 
 /* individual case studies  */
 .studyEntry {
-  border: 5px solid transparent;
+  margin-top: 2em;
+  margin-left: 1em;
+  padding-bottom: 30em;
+}
+.studyEntry:last-of-type {
+  padding-bottom: 3em;
 }
 
 /* date when a case study was written */
 .entryDate {
-  border: 5px solid transparent;
+  margin-top: 2em;
+  margin-bottom: 1.75em;
 }
 
 /* navigation for entry items */
@@ -364,7 +370,7 @@ label {
   margin: 0;
   padding: 2em;
 
-  width: 10em;
+  width: 25em;
 
   background: linear-gradient(
     to bottom,
@@ -378,27 +384,38 @@ label {
 .entryNav ul li {
   padding-bottom: 0.5em;
   font-size: 1.25rem;
-  /* border: 1px solid green; */
+}
+.entryNav ul li span {
+  padding-right: 1em;
+}
+.subList {
+  margin-left: 2em;
 }
 
 /* main section styles */
 .entrySection {
-  border: 5px solid transparent;
+  margin-left: 1em;
+  margin-right: 5em;
 }
 .sectionHead {
-  border: 5px solid transparent;
-}
-.sectionText {
-  border: 5px solid transparent;
+  padding-top: 4em;
 }
 
 /* subsection styles */
 .subSection {
-  border: 5px solid transparent;
+  padding-top: 4em;
 }
-.subsectionHead {
+/* .subsectionHead {
   border: 5px solid transparent;
+} */
+.subSection p {
+  padding-left: 1.5em;
 }
-.subsectionText {
-  border: 5px solid transparent;
+
+/* case study images */
+
+.csImg {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
 }
