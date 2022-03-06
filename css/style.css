@@ -81,6 +81,7 @@ img {
   grid-area: contact;
   display: grid;
   justify-content: center;
+  padding-bottom: 8vh;
 }
 #index {
   display: grid;
