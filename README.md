@@ -10,10 +10,6 @@ I drew design inspiration from Final Fantasy VII and the command line.
 
 This project is currently under development. Future additions include blog posts, animations, and OpenGL graphics.
 
-## Features
-
-- Carousel of portfolio projects with links to source code and live websites
-- Contact form
 
 ## Technologies
 
